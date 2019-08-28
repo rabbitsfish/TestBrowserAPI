@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function deciphering() {
+            document.en_or_de.action = "/base_tools/deciphering/";
+            document.en_or_de.submit();
+        }
+        function encryption() {
+            document.en_or_de.action = "/base_tools/encryption/";
+            document.en_or_de.submit();
+        }
+    </script> 
+    <form action="" name="en_or_de" method="get">
+        内容：<input type="text" name="en_or_de_name"/><br/><br/>
+        <input type="button" value="解密" name="deciphering_btn" onclick="deciphering()"/>
+        <input type="button" value="加密" name="encryption_btn" onclick="encryption()"/>
+    </form>
+</body>
+</html>
